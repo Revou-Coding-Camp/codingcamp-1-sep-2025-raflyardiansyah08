@@ -1,0 +1,113 @@
+body {
+    background: #0d1b2a;
+    color: #fff;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: #1b263b;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    width: 500px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 30px;
+    color: #e0e1dd;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.form-group input, .form-group button {
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+}
+
+#taskInput, #dateInput {
+    flex: 1;
+}
+
+button {
+    background: #415a77;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    border: none;
+    border-radius: 6px;
+}
+
+button:hover {
+    background: #778da9;
+}
+
+.delete-all {
+    background: #d62828;
+    margin-top: 10px;
+    padding: 8px 12px;
+}
+
+.delete-all:hover {
+    background: #e63946;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background: #415a77;
+}
+
+tr:nth-child(even) {
+    background: #2a3a57;
+}
+
+.action-btn {
+    background: #f4a261;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+.action-btn:hover {
+    background: #e76f51;
+}
+
+select {
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    background: #415a77;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+select:focus {
+    outline: none;
+}
+
+select:hover {
+    background: #778da9;
+    transition: all 0.3s ease-in-out;
+}
