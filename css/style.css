@@ -56,6 +56,8 @@ button:hover {
     background: #d62828;
     margin-top: 10px;
     padding: 8px 12px;
+    position: relative;
+    left: 165px;
 }
 
 .delete-all:hover {
@@ -101,6 +103,8 @@ select {
     color: white;
     cursor: pointer;
     margin-bottom: 10px;
+    position: relative;
+    right: 165px;
 }
 
 select:focus {
@@ -110,4 +114,42 @@ select:focus {
 select:hover {
     background: #778da9;
     transition: all 0.3s ease-in-out;
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+    body {
+        height: auto;
+        padding: 20px;
+        display: block;
+    }
+    .container {
+        width: 100%;
+        min-width: 0;
+        padding: 15px;
+        box-sizing: border-box;
+        border-radius: 8px;
+    }
+    .form-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+    table, th, td {
+        font-size: 14px;
+    }
+    th, td {
+        padding: 6px;
+    }
+    .delete-all {
+        width: 100%;
+        margin-top: 8px;
+        left: 0;
+        position: static;
+    }
+    select {
+        width: 100%;
+        margin-bottom: 8px;
+        right: 0;
+        position: static;
+    }
 }
